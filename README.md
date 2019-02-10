@@ -37,8 +37,8 @@ $ npm install @wmfs/tymly-data-types --save
 
 * The chances are you'll never need to use all these in any one scenario (that's where [domains](#domains) and [categories](#categories) can help narrow things down).
 
-| Name | Title       | Category | Domain(s) |
-| ---- | ----------- | -------- | --------- |
+| Data Item Name | Title       | Category | Domain(s) |
+| -------------- | ----------- | -------- | --------- |
 | `date` | Date | `dateTime` | ``general`` |
 | `text` | Text | `text` | ``general`` |
 | `dateTime` | Number | `dateTime` | ``general`` |
