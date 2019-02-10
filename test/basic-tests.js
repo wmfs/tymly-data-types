@@ -16,8 +16,8 @@ describe('Domain tests', function () {
     expect(domains).to.have.length.gt(3)
   })
 
-  it('Get all domains with term "Computer" (correct case)', function () {
-    const domains = tymlyDataTypes.getDomains({ filterString: 'computer' })
+  it('Get all domains with term "Computing" (correct case)', function () {
+    const domains = tymlyDataTypes.getDomains({ filterString: 'computing' })
     expect(domains).to.have.length.gt(0)
   })
 

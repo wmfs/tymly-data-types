@@ -7,7 +7,8 @@
     },
     "category": "text",
     "title": "Text",
-    "domains": ["general"]
+    "domains": ["general"],
+    "description": "General-purpose type for expressing textual data (a mixture of letters, numbers and symbols)."
   },
   {
     "seq": 10,
@@ -17,7 +18,8 @@
     },
     "category": "number",
     "title": "Integer",
-    "domains": ["general"]
+    "domains": ["general"],
+    "description": "General-purpose type for expressing an integer value."
   },
   {
     "seq": 10,
@@ -28,7 +30,8 @@
     },
     "category": "dateTime",
     "title": "Number",
-    "domains": ["general"]
+    "domains": ["general"],
+    "description": "General-purpose type for expressing a date and time."
   },
   {
     "seq": 10,
@@ -39,7 +42,8 @@
     },
     "category": "dateTime",
     "title": "Date of birth",
-    "domains": ["general"]
+    "domains": ["people"],
+    "description": "The date (no time portion) for expressing the date a person was born."
   },
   {
     "seq": 10,
@@ -50,7 +54,8 @@
     },
     "category": "dateTime",
     "title": "Appointment time",
-    "domains": ["general"]
+    "domains": ["general"],
+    "description": "A date and time, often defined for sometime in the future, to express when a particular event should occur."
   },
   {
     "seq": 10,
@@ -61,7 +66,8 @@
     },
     "category": "dateTime",
     "title": "Event time",
-    "domains": ["general"]
+    "domains": ["general"],
+    "description": "A date and time relating to when a particular event occurred."
   },
   {
     "seq": 10,
@@ -72,7 +78,8 @@
     },
     "category": "dateTime",
     "title": "Time",
-    "domains": ["general"]
+    "domains": ["general"],
+    "description": "General-purpose type for expressing a time of day (without being related to any particular date)."
   },
   {
     "seq": 10,
@@ -83,7 +90,8 @@
     },
     "category": "dateTime",
     "title": "Date",
-    "domains": ["general"]
+    "domains": ["general"],
+    "description": "General-purpose type for expressing a particular date (without a time component)."
   },
   {
     "seq": 10,
@@ -94,7 +102,8 @@
     },
     "category": "text",
     "title": "Email",
-    "domains": ["general"]
+    "domains": ["general", "computing", "person"],
+    "description": "Used to convey an email address."
   },
   {
     "seq": 10,
@@ -105,7 +114,8 @@
     },
     "category": "text",
     "title": "IPv4",
-    "domains": ["networking"]
+    "domains": ["computing"],
+    "description": "Used to convey an IPv4 address."
   },
   {
     "seq": 10,
@@ -116,7 +126,8 @@
     },
     "category": "text",
     "title": "IPv6",
-    "domains": ["networking"]
+    "domains": ["computing"],
+    "description": "Used to convey an IPv6 address."
   },
   {
     "seq": 10,
@@ -127,7 +138,8 @@
     },
     "category": "text",
     "title": "Hostname",
-    "domains": ["networking"]
+    "domains": ["computing"],
+    "description": "Used to convey an internet host name (RFC 5322)."
   },
   {
     "seq": 10,
@@ -138,17 +150,82 @@
     },
     "category": "text",
     "title": "IDN Hostname",
-    "domains": ["networking"]
+    "domains": ["computing"],
+    "description": "Used to convey an internationalized host name (RFC 5890)."
   },
   {
     "seq": 10,
-    "name": "url",
+    "name": "uprn",
+    "jsonSchema": {
+      "type": "integer"
+    },
+    "category": "number",
+    "title": "UPRN",
+    "domains": ["location", "fire"],
+    "description": "Unique Property Reference Number as issued by Ordnance Survey as part of their gazetteer products."
+  },
+  {
+    "seq": 10,
+    "name": "uri",
     "jsonSchema": {
       "type": "string",
       "format": "uri"
     },
     "category": "text",
-    "title": "URL",
-    "domains": ["general"]
+    "title": "URI",
+    "domains": ["general", "computing"],
+    "description": "A universal resource identifier (URI) according to RFC3986."
+  },
+  {
+    "seq": 10,
+    "name": "frsCallsign",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "text",
+    "title": "Callsign",
+    "domains": ["fire"],
+    "description": "A unique code to identify a vehicle, officer or other asset."
+  },
+  {
+    "seq": 10,
+    "name": "latLong",
+    "jsonSchema": {
+      "type": "number"
+    },
+    "category": "number",
+    "title": "Latitude/Longitude",
+    "domains": ["location"],
+    "description": "A pair of numbers denoting a point on the Earth's surface."
+  },
+  {
+    "seq": 10,
+    "name": "fsecCode",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "text",
+    "title": "FSEC code",
+    "domains": ["fire"],
+    "choiceSet": {
+      "care_home": "Care home",
+      "converted_flat": "Converted flat",
+      "factory": "Factory",
+      "flat": "Flat",
+      "further_education": "Further Education",
+      "hmo": "Home of Multiple Occupation",
+      "hospital": "Hospital",
+      "hostel": "Hostel",
+      "hotel": "Hotel",
+      "licensed_premise": "Licensed premise",
+      "office": "Office",
+      "other_public_building": "Other public building",
+      "other_sleeping": "Other sleeping",
+      "other_workplace": "Other workplace",
+      "public_building": "Public building",
+      "school": "School",
+      "shop": "Shop"
+    },
+    "description": "A code to help categorise a premise."
   }
 ]

@@ -3,41 +3,47 @@
     "default": true,
     "name": "general",
     "title": "General",
+    "description": "A set of general-purpose data types that can be used as a fallback if nothing more specific is available via other domains.",
     "seq": 0,
     "icons": {
       "material": "widgets"
     }
   },
   {
-    "name": "networking",
-    "seq": 10,
-    "title": "Computer networks",
+    "default": true,
+    "name": "people",
+    "title": "People",
+    "description": "Commonplace data-types relating to people (name, date of birth etc.)",
+    "seq": 0,
     "icons": {
-      "material": "dns"
+      "material": "fingerprint"
+    }
+  },
+  {
+    "name": "computing",
+    "seq": 10,
+    "title": "Computing",
+    "description": "Specialist data-types specific to computing.",
+    "icons": {
+      "material": "computer"
     }
   },
   {
     "name": "fire",
     "seq": 20,
     "title": "Fire Service",
+    "description": "Data-types that are often used in the Fire and Rescue sector.",
     "icons": {
       "material": "whatshot"
     }
   },
   {
-    "name": "health",
-    "seq": 30,
-    "title": "Health",
+    "name": "location",
+    "seq": 20,
+    "title": "Location",
+    "description": "Types often found when dealing with geo-spatial data.",
     "icons": {
-      "material": "healing"
-    }
-  },
-  {
-    "name": "education",
-    "seq": 30,
-    "title": "Education",
-    "icons": {
-      "material": "school"
+      "material": "location_searching"
     }
   }
 ]

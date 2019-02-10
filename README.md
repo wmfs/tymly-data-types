@@ -24,7 +24,7 @@
 
 # tymly-data-types
 
-> A library of data types often found in digital services.
+> A work-in-progress library of data types often found in digital services.
 
 ## <a name="install"></a>Install
 ```bash
@@ -37,22 +37,26 @@ $ npm install @wmfs/tymly-data-types --save
 
 * The chances are you'll never need to use all these in any one scenario (that's where [domains](#domains) and [categories](#categories) can help narrow things down).
 
-| Data Item Name | Title       | Category | Domain(s) |
-| -------------- | ----------- | -------- | --------- |
-| `date` | Date | `dateTime` | ``general`` |
-| `text` | Text | `text` | ``general`` |
-| `dateTime` | Number | `dateTime` | ``general`` |
-| `dateOfBirth` | Date of birth | `dateTime` | ``general`` |
-| `appointmentTime` | Appointment time | `dateTime` | ``general`` |
-| `eventTime` | Event time | `dateTime` | ``general`` |
-| `idnHostname` | IDN Hostname | `text` | ``networking`` |
-| `integer` | Integer | `number` | ``general`` |
-| `email` | Email | `text` | ``general`` |
-| `ipv4` | IPv4 | `text` | ``networking`` |
-| `ipv6` | IPv6 | `text` | ``networking`` |
-| `hostname` | Hostname | `text` | ``networking`` |
-| `time` | Time | `dateTime` | ``general`` |
-| `url` | URL | `text` | ``general`` |
+| Data Item Name | Title       | Category | Domain(s) | Description |
+| -------------- | ----------- | -------- | --------- | ----------- |
+| `appointmentTime` | Appointment time | `dateTime` | `general` | A date and time, often defined for sometime in the future, to express when a particular event should occur. |
+| `date` | Date | `dateTime` | `general` | General-purpose type for expressing a particular date (without a time component). |
+| `dateOfBirth` | Date of birth | `dateTime` | `people` | The date (no time portion) for expressing the date a person was born. |
+| `dateTime` | Number | `dateTime` | `general` | General-purpose type for expressing a date and time. |
+| `email` | Email | `text` | `general`, `computing`, `person` | Used to convey an email address. |
+| `eventTime` | Event time | `dateTime` | `general` | A date and time relating to when a particular event occurred. |
+| `frsCallsign` | Callsign | `text` | `fire` | A unique code to identify a vehicle, officer or other asset. |
+| `fsecCode` | FSEC code | `text` | `fire` | A code to help categorise a premise. |
+| `hostname` | Hostname | `text` | `computing` | Used to convey an internet host name (RFC 5322). |
+| `idnHostname` | IDN Hostname | `text` | `computing` | Used to convey an internationalized host name (RFC 5890). |
+| `integer` | Integer | `number` | `general` | General-purpose type for expressing an integer value. |
+| `ipv4` | IPv4 | `text` | `computing` | Used to convey an IPv4 address. |
+| `ipv6` | IPv6 | `text` | `computing` | Used to convey an IPv6 address. |
+| `latLong` | Latitude/Longitude | `number` | `location` | A pair of numbers denoting a point on the Earth&#39;s surface. |
+| `text` | Text | `text` | `general` | General-purpose type for expressing textual data (a mixture of letters, numbers and symbols). |
+| `time` | Time | `dateTime` | `general` | General-purpose type for expressing a time of day (without being related to any particular date). |
+| `uprn` | UPRN | `number` | `location`, `fire` | Unique Property Reference Number as issued by Ordnance Survey as part of their gazetteer products. |
+| `uri` | URI | `text` | `general`, `computing` | A universal resource identifier (URI) according to RFC3986. |
 
 
 
@@ -63,26 +67,26 @@ Data items are grouped into specialist *domains*, this helps narrow lists of dat
 * A single data-type can feature in multiple domains.
 * Note the `general` domain is considered the "default". Without any explicit configuration (i.e. no specialist domains are provided via options), the various methods in the **tymly-data-types** API will return data items to just those within the `general` domain.
 
-| Domain Name | Title       |
-| ----------- | ----------- |
-| `education` | Education |
-| `fire` | Fire Service |
-| `general` | General |
-| `health` | Health |
-| `networking` | Computer networks |
+| Domain Name | Title       | Description |
+| ----------- | ----------- | ----------- |
+| `computing` | Computing | Specialist data-types specific to computing. |
+| `fire` | Fire Service | Data-types that are often used in the Fire and Rescue sector. |
+| `general` | General | A set of general-purpose data types that can be used as a fallback if nothing more specific is available via other domains. |
+| `location` | Location | Types often found when dealing with geo-spatial data. |
+| `people` | People | Commonplace data-types relating to people (name, date of birth etc.) |
 
 
 ## Categories
 
 As well as being grouped into one-or-more problem domains, each data-type is also assigned to a more functional *category*:
 
-| Category Name | Title       |
-| ------------- | ----------- |
-| `choice` | Choice |
-| `dateTime` | Date/time |
-| `number` | Number |
-| `ref` | Reference |
-| `text` | Text |
+| Category Name | Title       | Description |
+| ------------- | ----------- | ----------- |
+| `choice` | Choice | Data items that relate to a finite, known set of values. |
+| `dateTime` | Date/time | Data items that relate to moments-in-time. |
+| `number` | Number | Data items that relate to a numeric value. |
+| `ref` | Reference | Data items whose value can relate to another entity |
+| `text` | Text | Data items that can contain a mixture of letters, numbers and symbols. |
 
 
 ## API
@@ -132,6 +136,14 @@ The main event, get a list of data-items as restricted by an object of optional 
 ```bash
 $ npm test
 ```
+
+## Todo
+
+* Make into an online database! :smiley:
+* Modules (having everything in one big JSON file is a bit wrong).
+* Introduce versioning solution
+* Validation of domains, categories and data-types.
+ * Especially integrity checks (data items belong to valid domains/categories), JSON Schema based?
 
 ## <a name="license"></a>License
 [MIT](https://github.com/wmfs/tymly-data-types/blob/master/LICENSE)

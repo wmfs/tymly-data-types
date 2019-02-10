@@ -2,26 +2,31 @@
   {
     "seq": 0,
     "name": "text",
-    "title": "Text"
+    "title": "Text",
+    "description": "Data items that can contain a mixture of letters, numbers and symbols."
   },
   {
     "seq": 1,
     "name": "number",
-    "title": "Number"
+    "title": "Number",
+    "description": "Data items that relate to a numeric value."
   },
   {
     "seq": 2,
     "name": "dateTime",
-    "title": "Date/time"
+    "title": "Date/time",
+    "description": "Data items that relate to moments-in-time."
   },
   {
     "seq": 3,
     "name": "choice",
-    "title": "Choice"
+    "title": "Choice",
+    "description": "Data items that relate to a finite, known set of values."
   },
   {
     "seq": 4,
     "name": "ref",
-    "title": "Reference"
+    "title": "Reference",
+    "description": "Data items whose value can relate to another entity"
   }
 ]
