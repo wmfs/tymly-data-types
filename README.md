@@ -33,20 +33,25 @@ $ npm install @wmfs/tymly-data-types --save
 
 ## Reference
 
-**The full list of data-types currently defined by *tymly-data-types* is shown below.**
+**The full list of 31 data-types currently defined by *tymly-data-types* is shown below.**
 
 * The chances are you'll never need to use all these in any one scenario (that's where [domains](#domains) and [categories](#categories) can help narrow things down).
 
 | Data Item Name | Title       | Category | Domain(s) | Description |
 | -------------- | ----------- | -------- | --------- | ----------- |
+| `address` | Address | `text` | `location` | A string denoting an address which could be used to send a letter. |
 | `appointmentTime` | Appointment time | `dateTime` | `general` | A date and time, often originally defined for a point in the future, to express when a particular event should occur. |
+| `boolean` | Boolean | `choice` | `general` | A general boolean value of true or false. |
+| `choice` | Choice | `choice` | `general` | Use when a value should be taken from a known set, but no other data type is appropriate. |
 | `date` | Date | `dateTime` | `general` | General-purpose type for expressing a particular date (without a time component). |
 | `dateOfBirth` | Date of birth | `dateTime` | `people` | The date (no time portion) for expressing the date a person was born. |
 | `dateTime` | Number | `dateTime` | `general` | General-purpose type for expressing a date and time. |
 | `email` | Email | `text` | `general`, `computing`, `person` | Used to convey an email address. |
+| `ethnicity` | Ethnicity | `choice` | `people` | Used to express the ethnicity of a person. |
 | `eventTime` | Event time | `dateTime` | `general` | A date and time relating to when a particular event occurred. |
 | `frsCallsign` | Callsign | `text` | `fire` | A unique code to identify a vehicle, officer or other asset. |
-| `fsecCode` | FSEC code | `text` | `fire` | A code to help categorise a premise. |
+| `fsecCode` | FSEC code | `choice` | `fire` | A code to help categorise a premise (as defined by Home Office). |
+| `gender` | Gender | `choice` | `people` | For describing a person&#39;s gender. |
 | `hostname` | Hostname | `text` | `computing` | Used to convey an internet host name (RFC 5322). |
 | `idnHostname` | IDN Hostname | `text` | `computing` | Used to convey an internationalized host name (RFC 5890). |
 | `integer` | Integer | `number` | `general` | General-purpose type for expressing an integer value. |
@@ -54,17 +59,23 @@ $ npm install @wmfs/tymly-data-types --save
 | `ipv6` | IPv6 | `text` | `computing` | Used to convey an IPv6 address. |
 | `latLong` | Latitude/Longitude | `number` | `location` | A pair of numbers denoting a point on the Earth&#39;s surface. |
 | `name` | Person&#39;s name | `text` | `people` | A data-type for expressing a person&#39;s name. |
+| `notes` | Notes | `text` | `general` | A data-item for expressing additional free-form notes often to provide deeper context for other data. |
 | `text` | Text | `text` | `general` | General-purpose type for expressing textual data (a mixture of letters, numbers and symbols). |
 | `time` | Time | `dateTime` | `general` | General-purpose type for expressing a time of day (without being related to any particular date). |
+| `title` | Title | `choice` | `people` | Titles used to address people with (Miss, Mr. etc.) |
 | `uprn` | UPRN | `number` | `location`, `fire` | Unique Property Reference Number as issued by Ordnance Survey as part of their gazetteer products. |
 | `uri` | URI | `text` | `general`, `computing` | A universal resource identifier (URI) according to RFC3986. |
 | `usrn` | USRN | `number` | `location`, `fire` | Unique Street Reference Number as issued by Ordnance Survey as part of their gazetteer products. |
+| `yesNo` | Yes/No | `choice` | `general` | A data type to express a Yes/No response. |
+| `yesNoNa` | Yes/No/Not Applicable | `choice` | `general` | A data type to express a &#39;Yes&#39;, &#39;No&#39; or &#39;Not applicable&#39; response. |
+| `yesNoOther` | Yes/No/Other | `choice` | `general` | A data type to express a &#39;Yes&#39;, &#39;No&#39; or &#39;Other&#39; response. |
+| `yesNoUnknown` | Yes/No/Unknown | `choice` | `general` | A data type to express a &#39;Yes&#39;, &#39;No&#39; or &#39;Unknown&#39; response. |
 
 
 
 ## Domains
 
-Data items are grouped into specialist *domains*, this helps narrow lists of data-items to just those suitable to the problem domain(s) being addressed:
+Data items are grouped into specialist *domains*, this helps narrow lists of data-items to just those suitable to the business domain(s) being addressed:
 
 * A single data-type can feature in multiple domains.
 * Note the `general` domain is considered the "default". Without any explicit configuration (i.e. no specialist domains are provided via options), the various methods in the **tymly-data-types** API will return data items to just those within the `general` domain.

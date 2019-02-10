@@ -7,7 +7,9 @@
     },
     "category": "text",
     "title": "Text",
-    "domains": ["general"],
+    "domains": [
+      "general"
+    ],
     "description": "General-purpose type for expressing textual data (a mixture of letters, numbers and symbols)."
   },
   {
@@ -18,7 +20,9 @@
     },
     "category": "number",
     "title": "Integer",
-    "domains": ["general"],
+    "domains": [
+      "general"
+    ],
     "description": "General-purpose type for expressing an integer value."
   },
   {
@@ -30,7 +34,9 @@
     },
     "category": "dateTime",
     "title": "Number",
-    "domains": ["general"],
+    "domains": [
+      "general"
+    ],
     "description": "General-purpose type for expressing a date and time."
   },
   {
@@ -42,7 +48,9 @@
     },
     "category": "dateTime",
     "title": "Date of birth",
-    "domains": ["people"],
+    "domains": [
+      "people"
+    ],
     "description": "The date (no time portion) for expressing the date a person was born."
   },
   {
@@ -53,7 +61,9 @@
     },
     "category": "text",
     "title": "Person's name",
-    "domains": ["people"],
+    "domains": [
+      "people"
+    ],
     "description": "A data-type for expressing a person's name."
   },
   {
@@ -65,7 +75,9 @@
     },
     "category": "dateTime",
     "title": "Appointment time",
-    "domains": ["general"],
+    "domains": [
+      "general"
+    ],
     "description": "A date and time, often originally defined for a point in the future, to express when a particular event should occur."
   },
   {
@@ -77,7 +89,9 @@
     },
     "category": "dateTime",
     "title": "Event time",
-    "domains": ["general"],
+    "domains": [
+      "general"
+    ],
     "description": "A date and time relating to when a particular event occurred."
   },
   {
@@ -89,7 +103,9 @@
     },
     "category": "dateTime",
     "title": "Time",
-    "domains": ["general"],
+    "domains": [
+      "general"
+    ],
     "description": "General-purpose type for expressing a time of day (without being related to any particular date)."
   },
   {
@@ -101,7 +117,9 @@
     },
     "category": "dateTime",
     "title": "Date",
-    "domains": ["general"],
+    "domains": [
+      "general"
+    ],
     "description": "General-purpose type for expressing a particular date (without a time component)."
   },
   {
@@ -113,7 +131,11 @@
     },
     "category": "text",
     "title": "Email",
-    "domains": ["general", "computing", "person"],
+    "domains": [
+      "general",
+      "computing",
+      "person"
+    ],
     "description": "Used to convey an email address."
   },
   {
@@ -125,7 +147,9 @@
     },
     "category": "text",
     "title": "IPv4",
-    "domains": ["computing"],
+    "domains": [
+      "computing"
+    ],
     "description": "Used to convey an IPv4 address."
   },
   {
@@ -137,7 +161,9 @@
     },
     "category": "text",
     "title": "IPv6",
-    "domains": ["computing"],
+    "domains": [
+      "computing"
+    ],
     "description": "Used to convey an IPv6 address."
   },
   {
@@ -149,7 +175,9 @@
     },
     "category": "text",
     "title": "Hostname",
-    "domains": ["computing"],
+    "domains": [
+      "computing"
+    ],
     "description": "Used to convey an internet host name (RFC 5322)."
   },
   {
@@ -161,7 +189,9 @@
     },
     "category": "text",
     "title": "IDN Hostname",
-    "domains": ["computing"],
+    "domains": [
+      "computing"
+    ],
     "description": "Used to convey an internationalized host name (RFC 5890)."
   },
   {
@@ -172,7 +202,10 @@
     },
     "category": "number",
     "title": "UPRN",
-    "domains": ["location", "fire"],
+    "domains": [
+      "location",
+      "fire"
+    ],
     "description": "Unique Property Reference Number as issued by Ordnance Survey as part of their gazetteer products."
   },
   {
@@ -183,7 +216,10 @@
     },
     "category": "number",
     "title": "USRN",
-    "domains": ["location", "fire"],
+    "domains": [
+      "location",
+      "fire"
+    ],
     "description": "Unique Street Reference Number as issued by Ordnance Survey as part of their gazetteer products."
   },
   {
@@ -195,7 +231,10 @@
     },
     "category": "text",
     "title": "URI",
-    "domains": ["general", "computing"],
+    "domains": [
+      "general",
+      "computing"
+    ],
     "description": "A universal resource identifier (URI) according to RFC3986."
   },
   {
@@ -206,7 +245,9 @@
     },
     "category": "text",
     "title": "Callsign",
-    "domains": ["fire"],
+    "domains": [
+      "fire"
+    ],
     "description": "A unique code to identify a vehicle, officer or other asset."
   },
   {
@@ -217,7 +258,9 @@
     },
     "category": "number",
     "title": "Latitude/Longitude",
-    "domains": ["location"],
+    "domains": [
+      "location"
+    ],
     "description": "A pair of numbers denoting a point on the Earth's surface."
   },
   {
@@ -226,9 +269,11 @@
     "jsonSchema": {
       "type": "string"
     },
-    "category": "text",
+    "category": "choice",
     "title": "FSEC code",
-    "domains": ["fire"],
+    "domains": [
+      "fire"
+    ],
     "choiceSet": {
       "care_home": "Care home",
       "converted_flat": "Converted flat",
@@ -248,6 +293,213 @@
       "school": "School",
       "shop": "Shop"
     },
-    "description": "A code to help categorise a premise."
+    "description": "A code to help categorise a premise (as defined by Home Office)."
+  },
+  {
+    "seq": 10,
+    "name": "ethnicity",
+    "jsonSchema": {
+      "type": "text"
+    },
+    "category": "choice",
+    "title": "Ethnicity",
+    "domains": [
+      "people"
+    ],
+    "description": "Used to express the ethnicity of a person.",
+    "choiceSet": {
+      "NOT_SHARE": "Does not wish to share",
+      "WHITE BRITISH": "White British",
+      "IRISH": "Irish",
+      "TRAVELLER": "Gypsy or Irish Traveller",
+      "OTHER_WHITE": "Other white background",
+      "WHITE_BLACK_AFR": "White and Black African",
+      "WHITE_BLACK_CAR": "White and Black Caribbean",
+      "WHITE_ASIAN": "White and Asian",
+      "OTHER_MIXED": "Other Mixed Background",
+      "ASIAN_BRITISH": "Asian British",
+      "INDIAN": "Indian",
+      "PAKISTANI": "Pakistani",
+      "BANGLADESHI": "Bangladeshi",
+      "CHINESE": "Chinese",
+      "OTHER_ASIAN": "Other Asian",
+      "BLACK_BRITISH": "Black British",
+      "AFRICAN": "African",
+      "CARIBBEAN": "Caribbean",
+      "OTHER_BLACK": "Other Black Background",
+      "ARAB": "Arab",
+      "OTHER_ETHNIC_BACKGROUND": "Other ethnic background"
+    }
+  },
+  {
+    "seq": 10,
+    "name": "title",
+    "jsonSchema": {
+      "type": "text"
+    },
+    "category": "choice",
+    "title": "Title",
+    "domains": [
+      "people"
+    ],
+    "description": "Titles used to address people with (Miss, Mr. etc.)",
+    "choiceSet": {
+      "MR": "Mr.",
+      "MRS": "Mrs.",
+      "MS": "Ms.",
+      "MISS": "Miss",
+      "SIR": "Sir",
+      "DR": "Dr.",
+      "LORD": "Lord",
+      "REVEREND": "Reverend"
+    }
+  },
+  {
+    "seq": 10,
+    "name": "boolean",
+    "jsonSchema": {
+      "type": "boolean"
+    },
+    "category": "choice",
+    "title": "Boolean",
+    "domains": [
+      "general"
+    ],
+    "description": "A general boolean value of true or false."
+  },
+  {
+    "seq": 10,
+    "name": "yesNo",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "choice",
+    "title": "Yes/No",
+    "domains": [
+      "general"
+    ],
+    "description": "A data type to express a Yes/No response.",
+    "choiceSet": {
+      "YES": "Yes",
+      "NO": "No"
+    }
+  },
+  {
+    "seq": 10,
+    "name": "yesNoNa",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "choice",
+    "title": "Yes/No/Not Applicable",
+    "domains": [
+      "general"
+    ],
+    "description": "A data type to express a 'Yes', 'No' or 'Not applicable' response.",
+    "choiceSet": {
+      "YES": "Yes",
+      "NO": "No",
+      "NA": "Not applicable"
+    }
+  },
+  {
+    "seq": 10,
+    "name": "yesNoUnknown",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "choice",
+    "title": "Yes/No/Unknown",
+    "domains": [
+      "general"
+    ],
+    "description": "A data type to express a 'Yes', 'No' or 'Unknown' response.",
+    "choiceSet": {
+      "YES": "Yes",
+      "NO": "No",
+      "UNKNOWN": "Unknown"
+    }
+  },
+  {
+    "seq": 10,
+    "name": "yesNoOther",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "choice",
+    "title": "Yes/No/Other",
+    "domains": [
+      "general"
+    ],
+    "description": "A data type to express a 'Yes', 'No' or 'Other' response.",
+    "choiceSet": {
+      "YES": "Yes",
+      "NO": "No",
+      "OTHER": "Other"
+    }
+  },
+  {
+    "seq": 10,
+    "name": "address",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "text",
+    "title": "Address",
+    "domains": [
+      "location"
+    ],
+    "description": "A string denoting an address which could be used to send a letter."
+  },
+  {
+    "seq": 10,
+    "name": "notes",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "text",
+    "title": "Notes",
+    "domains": [
+      "general"
+    ],
+    "description": "A data-item for expressing additional free-form notes often to provide deeper context for other data."
+  },
+  {
+    "seq": 10,
+    "name": "gender",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "choice",
+    "title": "Gender",
+    "domains": [
+      "people"
+    ],
+    "description": "For describing a person's gender.",
+    "choiceSet": {
+      "FEMALE": "Female",
+      "MALE": "Male",
+      "TRANSGENDER": "Transgender",
+      "PREF_NOT_SAY": "Prefer not to say",
+      "PREF_SELF_DESC": "Prefer to self describe"
+    }
+  },
+  {
+    "seq": 10,
+    "name": "choice",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "choice",
+    "title": "Choice",
+    "domains": [
+      "general"
+    ],
+    "description": "Use when a value should be taken from a known set, but no other data type is appropriate.",
+    "choiceSet": {
+      "VALUE1": "Example value 1",
+      "VALUE2": "Example value 2",
+      "VALUE3": "Example value 3"
+    }
   }
 ]

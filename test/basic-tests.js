@@ -116,10 +116,10 @@ describe('Data type tests', function () {
     expect(dataTypes).to.have.length.gt(10)
   })
 
-  it('Get all data types with term "url"', function () {
-    const dataTypes = tymlyDataTypes.getDataTypes({ filterString: 'url' })
+  it('Get all data types with term "uri"', function () {
+    const dataTypes = tymlyDataTypes.getDataTypes({ filterString: 'uri' })
     expect(dataTypes.length).to.eql(1)
-    expect(dataTypes[0].name).to.eql('url')
+    expect(dataTypes[0].name).to.eql('uri')
   })
 
   it('Get an empty array with nonsense filter', function () {
@@ -169,5 +169,12 @@ describe('Data type tests', function () {
     )
     expect(dataTypes).to.have.length.gt(2)
     expect(dataTypes).to.have.length.lt(totalCategoryCount)
+  })
+})
+
+describe('Misc', function () {
+  it('Get list of data type names', function () {
+    const dataTypeNames = tymlyDataTypes.getDataTypeNames()
+    expect(dataTypeNames).to.have.length.gt(10)
   })
 })
