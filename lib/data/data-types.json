@@ -33,7 +33,7 @@
       "format": "date-time"
     },
     "category": "dateTime",
-    "title": "Number",
+    "title": "Date/time",
     "domains": [
       "general"
     ],

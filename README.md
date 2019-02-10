@@ -45,7 +45,7 @@ $ npm install @wmfs/tymly-data-types --save
 | `choice` | Choice | `choice` | `general` | Use when a value should be taken from a known set, but no other data type is appropriate. |
 | `date` | Date | `dateTime` | `general` | General-purpose type for expressing a particular date (without a time component). |
 | `dateOfBirth` | Date of birth | `dateTime` | `people` | The date (no time portion) for expressing the date a person was born. |
-| `dateTime` | Number | `dateTime` | `general` | General-purpose type for expressing a date and time. |
+| `dateTime` | Date/time | `dateTime` | `general` | General-purpose type for expressing a date and time. |
 | `email` | Email | `text` | `general`, `computing`, `person` | Used to convey an email address. |
 | `ethnicity` | Ethnicity | `choice` | `people` | Used to express the ethnicity of a person. |
 | `eventTime` | Event time | `dateTime` | `general` | A date and time relating to when a particular event occurred. |
@@ -143,6 +143,11 @@ The main event, get a list of data-items as restricted by an object of optional 
 | `sort` | Controls the order of that the data items will be returned. A string of either `seq` (**default**) or  `name`. |
 
 * This method returns an array of zero-or-more `dataType` objects. Take a look [here](https://github.com/wmfs/tymly-data-types/blob/master/lib/data/data-types.json) to see the type of thing returned.
+
+### `getDataTypeNames()`
+
+Returns an array of data-type names.
+
 
 ## <a name="test"></a>Testing
 
