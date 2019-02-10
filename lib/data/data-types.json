@@ -1,0 +1,154 @@
+[
+  {
+    "seq": 10,
+    "name": "text",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "text",
+    "title": "Text",
+    "domains": ["general"]
+  },
+  {
+    "seq": 10,
+    "name": "integer",
+    "jsonSchema": {
+      "type": "integer"
+    },
+    "category": "number",
+    "title": "Integer",
+    "domains": ["general"]
+  },
+  {
+    "seq": 10,
+    "name": "dateTime",
+    "jsonSchema": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "category": "dateTime",
+    "title": "Number",
+    "domains": ["general"]
+  },
+  {
+    "seq": 10,
+    "name": "dateOfBirth",
+    "jsonSchema": {
+      "type": "string",
+      "format": "date"
+    },
+    "category": "dateTime",
+    "title": "Date of birth",
+    "domains": ["general"]
+  },
+  {
+    "seq": 10,
+    "name": "appointmentTime",
+    "jsonSchema": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "category": "dateTime",
+    "title": "Appointment time",
+    "domains": ["general"]
+  },
+  {
+    "seq": 10,
+    "name": "eventTime",
+    "jsonSchema": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "category": "dateTime",
+    "title": "Event time",
+    "domains": ["general"]
+  },
+  {
+    "seq": 10,
+    "name": "time",
+    "jsonSchema": {
+      "type": "string",
+      "format": "time"
+    },
+    "category": "dateTime",
+    "title": "Time",
+    "domains": ["general"]
+  },
+  {
+    "seq": 10,
+    "name": "date",
+    "jsonSchema": {
+      "type": "string",
+      "format": "date"
+    },
+    "category": "dateTime",
+    "title": "Date",
+    "domains": ["general"]
+  },
+  {
+    "seq": 10,
+    "name": "email",
+    "jsonSchema": {
+      "type": "string",
+      "format": "email"
+    },
+    "category": "text",
+    "title": "Email",
+    "domains": ["general"]
+  },
+  {
+    "seq": 10,
+    "name": "ipv4",
+    "jsonSchema": {
+      "type": "string",
+      "format": "ipv4"
+    },
+    "category": "text",
+    "title": "IPv4",
+    "domains": ["networking"]
+  },
+  {
+    "seq": 10,
+    "name": "ipv6",
+    "jsonSchema": {
+      "type": "string",
+      "format": "ipv6"
+    },
+    "category": "text",
+    "title": "IPv6",
+    "domains": ["networking"]
+  },
+  {
+    "seq": 10,
+    "name": "hostname",
+    "jsonSchema": {
+      "type": "string",
+      "format": "hostname"
+    },
+    "category": "text",
+    "title": "Hostname",
+    "domains": ["networking"]
+  },
+  {
+    "seq": 10,
+    "name": "idnHostname",
+    "jsonSchema": {
+      "type": "string",
+      "format": "idn-hostname"
+    },
+    "category": "text",
+    "title": "IDN Hostname",
+    "domains": ["networking"]
+  },
+  {
+    "seq": 10,
+    "name": "url",
+    "jsonSchema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "category": "text",
+    "title": "URL",
+    "domains": ["general"]
+  }
+]

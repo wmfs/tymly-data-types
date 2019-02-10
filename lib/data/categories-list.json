@@ -1,0 +1,27 @@
+[
+  {
+    "seq": 0,
+    "name": "text",
+    "title": "Text"
+  },
+  {
+    "seq": 1,
+    "name": "number",
+    "title": "Number"
+  },
+  {
+    "seq": 2,
+    "name": "dateTime",
+    "title": "Date/time"
+  },
+  {
+    "seq": 3,
+    "name": "choice",
+    "title": "Choice"
+  },
+  {
+    "seq": 4,
+    "name": "ref",
+    "title": "Reference"
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "default": true,
+    "name": "general",
+    "title": "General",
+    "seq": 0,
+    "icons": {
+      "material": "widgets"
+    }
+  },
+  {
+    "name": "networking",
+    "seq": 10,
+    "title": "Computer networks",
+    "icons": {
+      "material": "dns"
+    }
+  },
+  {
+    "name": "fire",
+    "seq": 20,
+    "title": "Fire Service",
+    "icons": {
+      "material": "whatshot"
+    }
+  },
+  {
+    "name": "health",
+    "seq": 30,
+    "title": "Health",
+    "icons": {
+      "material": "healing"
+    }
+  },
+  {
+    "name": "education",
+    "seq": 30,
+    "title": "Education",
+    "icons": {
+      "material": "school"
+    }
+  }
+]
