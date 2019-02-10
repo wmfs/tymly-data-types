@@ -125,7 +125,7 @@ The main event, get a list of data-items as restricted by an object of optional 
 | `category` | An optional string. Only data-types belonging to the supplied category name will be returned. |
 | `sort` | Controls the order of that the data items will be returned. A string of either `seq` (**default**) or  `name`. |
 
-* This method returns an array of zero-or-more `dataType` objects. Take a look [here](https://github.com/wmfs/tymly-data-types) to see the type of thing returned.
+* This method returns an array of zero-or-more `dataType` objects. Take a look [here](https://github.com/wmfs/tymly-data-types/blob/master/lib/data/data-types.json) to see the type of thing returned.
 
 ## <a name="test"></a>Testing
 
