@@ -47,6 +47,17 @@
   },
   {
     "seq": 10,
+    "name": "name",
+    "jsonSchema": {
+      "type": "string"
+    },
+    "category": "text",
+    "title": "Person's name",
+    "domains": ["people"],
+    "description": "A data-type for expressing a person's name."
+  },
+  {
+    "seq": 10,
     "name": "appointmentTime",
     "jsonSchema": {
       "type": "string",
@@ -55,7 +66,7 @@
     "category": "dateTime",
     "title": "Appointment time",
     "domains": ["general"],
-    "description": "A date and time, often defined for sometime in the future, to express when a particular event should occur."
+    "description": "A date and time, often originally defined for a point in the future, to express when a particular event should occur."
   },
   {
     "seq": 10,

@@ -39,7 +39,7 @@ $ npm install @wmfs/tymly-data-types --save
 
 | Data Item Name | Title       | Category | Domain(s) | Description |
 | -------------- | ----------- | -------- | --------- | ----------- |
-| `appointmentTime` | Appointment time | `dateTime` | `general` | A date and time, often defined for sometime in the future, to express when a particular event should occur. |
+| `appointmentTime` | Appointment time | `dateTime` | `general` | A date and time, often originally defined for a point in the future, to express when a particular event should occur. |
 | `date` | Date | `dateTime` | `general` | General-purpose type for expressing a particular date (without a time component). |
 | `dateOfBirth` | Date of birth | `dateTime` | `people` | The date (no time portion) for expressing the date a person was born. |
 | `dateTime` | Number | `dateTime` | `general` | General-purpose type for expressing a date and time. |
@@ -53,6 +53,7 @@ $ npm install @wmfs/tymly-data-types --save
 | `ipv4` | IPv4 | `text` | `computing` | Used to convey an IPv4 address. |
 | `ipv6` | IPv6 | `text` | `computing` | Used to convey an IPv6 address. |
 | `latLong` | Latitude/Longitude | `number` | `location` | A pair of numbers denoting a point on the Earth&#39;s surface. |
+| `name` | Person&#39;s name | `text` | `people` | A data-type for expressing a person&#39;s name. |
 | `text` | Text | `text` | `general` | General-purpose type for expressing textual data (a mixture of letters, numbers and symbols). |
 | `time` | Time | `dateTime` | `general` | General-purpose type for expressing a time of day (without being related to any particular date). |
 | `uprn` | UPRN | `number` | `location`, `fire` | Unique Property Reference Number as issued by Ordnance Survey as part of their gazetteer products. |
