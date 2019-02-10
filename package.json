@@ -5,7 +5,7 @@
   "author": "West Midlands Fire Service",
   "keywords": [
     "tymly",
-    "packages"
+    "package"
   ],
   "main": "./lib/index.js",
   "dependencies": {
