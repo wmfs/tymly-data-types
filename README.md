@@ -58,6 +58,7 @@ $ npm install @wmfs/tymly-data-types --save
 | `time` | Time | `dateTime` | `general` | General-purpose type for expressing a time of day (without being related to any particular date). |
 | `uprn` | UPRN | `number` | `location`, `fire` | Unique Property Reference Number as issued by Ordnance Survey as part of their gazetteer products. |
 | `uri` | URI | `text` | `general`, `computing` | A universal resource identifier (URI) according to RFC3986. |
+| `usrn` | USRN | `number` | `location`, `fire` | Unique Street Reference Number as issued by Ordnance Survey as part of their gazetteer products. |
 
 
 

@@ -177,6 +177,17 @@
   },
   {
     "seq": 10,
+    "name": "usrn",
+    "jsonSchema": {
+      "type": "integer"
+    },
+    "category": "number",
+    "title": "USRN",
+    "domains": ["location", "fire"],
+    "description": "Unique Street Reference Number as issued by Ordnance Survey as part of their gazetteer products."
+  },
+  {
+    "seq": 10,
     "name": "uri",
     "jsonSchema": {
       "type": "string",
