@@ -44,7 +44,7 @@
     "name": "dateOfBirth",
     "jsonSchema": {
       "type": "string",
-      "format": "date"
+      "format": "date-time"
     },
     "category": "dateTime",
     "title": "Date of birth",
@@ -113,7 +113,7 @@
     "name": "date",
     "jsonSchema": {
       "type": "string",
-      "format": "date"
+      "format": "date-time"
     },
     "category": "dateTime",
     "title": "Date",
