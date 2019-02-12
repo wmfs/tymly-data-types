@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/wmfs/tymly-data-types/compare/v1.0.0...v1.1.0) (2019-02-12)
+
+
+### ✨ Features
+
+* Add getDataItemByName() function. ([b1a4b89](https://github.com/wmfs/tymly-data-types/commit/b1a4b89))
+
 # 1.0.0 (2019-02-12)
 
 
