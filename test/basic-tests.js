@@ -177,4 +177,10 @@ describe('Misc', function () {
     const dataTypeNames = tymlyDataTypes.getDataTypeNames()
     expect(dataTypeNames).to.have.length.gt(10)
   })
+
+  it('Get integer data-type by name', function () {
+    const integer = tymlyDataTypes.getDataTypeByName('integer')
+    console.log(integer)
+    expect(integer.name).to.eql('integer')
+  })
 })
