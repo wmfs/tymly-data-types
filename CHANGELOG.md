@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/wmfs/tymly-data-types/compare/v1.1.0...v1.1.1) (2019-02-12)
+
+
+### 🐛 Bug Fixes
+
+* Use array.find() to return a data-item. ([7845d7c](https://github.com/wmfs/tymly-data-types/commit/7845d7c))
+
 # [1.1.0](https://github.com/wmfs/tymly-data-types/compare/v1.0.0...v1.1.0) (2019-02-12)
 
 
