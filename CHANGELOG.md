@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/wmfs/tymly-data-types/compare/v1.1.1...v1.1.2) (2019-02-12)
+
+
+### 🐛 Bug Fixes
+
+* Reverting to using data-time from previous JSON Schema drafts. ([50d46f7](https://github.com/wmfs/tymly-data-types/commit/50d46f7))
+
 ## [1.1.1](https://github.com/wmfs/tymly-data-types/compare/v1.1.0...v1.1.1) (2019-02-12)
 
 
