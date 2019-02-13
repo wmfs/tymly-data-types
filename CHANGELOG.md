@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/wmfs/tymly-data-types/compare/v1.1.3...v1.2.0) (2019-02-13)
+
+
+### ✨ Features
+
+* Add new getCategoryDefaultDataTypeNames() function. ([1550e65](https://github.com/wmfs/tymly-data-types/commit/1550e65))
+
 ## [1.1.3](https://github.com/wmfs/tymly-data-types/compare/v1.1.2...v1.1.3) (2019-02-13)
 
 
