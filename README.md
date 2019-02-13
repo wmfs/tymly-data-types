@@ -165,6 +165,10 @@ Returns a key/value object where key is the name of a category and value is the 
 }
 ```
 
+### `getDataItemsByCategory(options)`
+
+Just like `getDataTypes()` but returns a key/value object where key is a category name and value is the associated array of data items.
+
 ## <a name="test"></a>Testing
 
 ```bash
