@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/wmfs/tymly-data-types/compare/v1.1.2...v1.1.3) (2019-02-13)
+
+
+### 🐛 Bug Fixes
+
+* Add full .json extension for WebPack processing. ([bcb0b69](https://github.com/wmfs/tymly-data-types/commit/bcb0b69))
+
 ## [1.1.2](https://github.com/wmfs/tymly-data-types/compare/v1.1.1...v1.1.2) (2019-02-12)
 
 
