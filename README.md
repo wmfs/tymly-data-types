@@ -148,11 +148,22 @@ The main event, get a list of data-items as restricted by an object of optional 
 
 Returns the specified data type.
 
-
 ### `getDataTypeNames()`
 
 Returns an array of data-type names.
 
+### `getCategoryDefaultDataTypeNames()`
+
+Returns a key/value object where key is the name of a category and value is the name of a dataType considered the "default" for that category.
+
+``` json
+{
+  "text": "text",
+  "number": "integer",
+  "dateTime": "dateTime",
+  "choice": "choice"
+}
+```
 
 ## <a name="test"></a>Testing
 

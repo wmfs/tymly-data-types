@@ -180,7 +180,23 @@ describe('Misc', function () {
 
   it('Get integer data-type by name', function () {
     const integer = tymlyDataTypes.getDataTypeByName('integer')
-    console.log(integer)
     expect(integer.name).to.eql('integer')
+  })
+
+  it('Get integer data-type by name', function () {
+    const integer = tymlyDataTypes.getDataTypeByName('integer')
+    expect(integer.name).to.eql('integer')
+  })
+
+  it('Get category default data items', function () {
+    const categoryDefaults = tymlyDataTypes.getCategoryDefaultDataTypeNames()
+    expect(categoryDefaults).to.eql(
+      {
+        text: 'text',
+        number: 'integer',
+        dateTime: 'dateTime',
+        choice: 'choice'
+      }
+    )
   })
 })

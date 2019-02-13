@@ -6,6 +6,7 @@
       "type": "string"
     },
     "category": "text",
+    "categoryDefault": true,
     "title": "Text",
     "domains": [
       "general"
@@ -19,6 +20,7 @@
       "type": "integer"
     },
     "category": "number",
+    "categoryDefault": true,
     "title": "Integer",
     "domains": [
       "general"
@@ -33,6 +35,7 @@
       "format": "date-time"
     },
     "category": "dateTime",
+    "categoryDefault": true,
     "title": "Date/time",
     "domains": [
       "general"
@@ -491,6 +494,7 @@
       "type": "string"
     },
     "category": "choice",
+    "categoryDefault": true,
     "title": "Choice",
     "domains": [
       "general"
