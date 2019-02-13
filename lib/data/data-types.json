@@ -1,6 +1,6 @@
 [
   {
-    "seq": 10,
+    "seq": 5,
     "name": "text",
     "jsonSchema": {
       "type": "string"
@@ -14,7 +14,7 @@
     "description": "General-purpose type for expressing textual data (a mixture of letters, numbers and symbols)."
   },
   {
-    "seq": 10,
+    "seq": 5,
     "name": "integer",
     "jsonSchema": {
       "type": "integer"
@@ -28,7 +28,7 @@
     "description": "General-purpose type for expressing an integer value."
   },
   {
-    "seq": 10,
+    "seq": 5,
     "name": "dateTime",
     "jsonSchema": {
       "type": "string",
@@ -488,7 +488,7 @@
     }
   },
   {
-    "seq": 10,
+    "seq": 5,
     "name": "choice",
     "jsonSchema": {
       "type": "string"

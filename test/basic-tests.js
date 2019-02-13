@@ -199,4 +199,10 @@ describe('Misc', function () {
       }
     )
   })
+
+  it('Get category default data items', function () {
+    const dataItemsByCategory = tymlyDataTypes.getDataItemsByCategory()
+    // TODO: Find a way of assert this.
+    console.log(dataItemsByCategory)
+  })
 })
