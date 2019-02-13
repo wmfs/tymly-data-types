@@ -1,3 +1,27 @@
+# [1.3.0](https://github.com/wmfs/tymly-data-types/compare/v1.2.0...v1.3.0) (2019-02-13)
+
+
+### ✨ Features
+
+* Add new getDataItemsByCategory() function. ([c346a2e](https://github.com/wmfs/tymly-data-types/commit/c346a2e))
+* Add new getDataItemsByCategory() function. ([633d340](https://github.com/wmfs/tymly-data-types/commit/633d340))
+* Add new getDataItemsByCategory() function. ([a23a2ae](https://github.com/wmfs/tymly-data-types/commit/a23a2ae))
+
+
+### 🐛 Bug Fixes
+
+* Resolve merge cock up ([4eb6e7e](https://github.com/wmfs/tymly-data-types/commit/4eb6e7e))
+
+
+### 📦 Code Refactoring
+
+* Gather all exports togther - it's neater and clearer that way ([369c22c](https://github.com/wmfs/tymly-data-types/commit/369c22c))
+
+
+### 📚 Documentation
+
+* Update README.md. ([b0e14e5](https://github.com/wmfs/tymly-data-types/commit/b0e14e5))
+
 # [1.2.0](https://github.com/wmfs/tymly-data-types/compare/v1.1.3...v1.2.0) (2019-02-13)
 
 
