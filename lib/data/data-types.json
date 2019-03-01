@@ -29,6 +29,19 @@
   },
   {
     "seq": 5,
+    "name": "number",
+    "jsonSchema": {
+      "type": "number"
+    },
+    "category": "number",
+    "title": "Number",
+    "domains": [
+      "general"
+    ],
+    "description": "General-purpose type for expressing a floating point value."
+  },
+  {
+    "seq": 5,
     "name": "dateTime",
     "jsonSchema": {
       "type": "string",
@@ -201,7 +214,8 @@
     "seq": 10,
     "name": "uprn",
     "jsonSchema": {
-      "type": "integer"
+      "type": "integer",
+      "maxLength": 12
     },
     "category": "number",
     "title": "UPRN",
@@ -215,7 +229,8 @@
     "seq": 10,
     "name": "usrn",
     "jsonSchema": {
-      "type": "integer"
+      "type": "integer",
+      "maxLength": 8
     },
     "category": "number",
     "title": "USRN",
@@ -257,14 +272,31 @@
     "seq": 10,
     "name": "latLong",
     "jsonSchema": {
-      "type": "number"
+      "type": "number",
+      "maxLength": 9,
+      "multipleOf": 0.00000001
     },
     "category": "number",
     "title": "Latitude/Longitude",
     "domains": [
       "location"
     ],
-    "description": "A pair of numbers denoting a point on the Earth's surface."
+    "description": "A pair of numbers denoting a point on the Earth's surface, in accordance with the ETRS89 coordinate reference system."
+  },
+  {
+    "seq": 10,
+    "name": "osNatGrid",
+    "jsonSchema": {
+      "type": "number",
+      "maxLength": 8,
+      "multipleOf": 0.01
+    },
+    "category": "number",
+    "title": "OS Easting/Northing",
+    "domains": [
+      "location"
+    ],
+    "description": "A pair of numbers denoting a location, in accordance to the British National Grid."
   },
   {
     "seq": 10,
