@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/wmfs/tymly-data-types/compare/v1.4.0...v1.5.0) (2019-03-01)
+
+
+### ✨ Features
+
+* Add postcode data type ([0eec91a](https://github.com/wmfs/tymly-data-types/commit/0eec91a))
+
 # [1.4.0](https://github.com/wmfs/tymly-data-types/compare/v1.3.0...v1.4.0) (2019-03-01)
 
 
