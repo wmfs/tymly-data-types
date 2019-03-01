@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/wmfs/tymly-data-types/compare/v1.3.0...v1.4.0) (2019-03-01)
+
+
+### ✨ Features
+
+* Additional annotations, maxLength etc, to some locations types ([dde1287](https://github.com/wmfs/tymly-data-types/commit/dde1287))
+
+
+### 📦 Code Refactoring
+
+* Pull out _filterDataTypesByCategoryName. Rework getDataTypes so it doesn't need an if stat ([9a34cd6](https://github.com/wmfs/tymly-data-types/commit/9a34cd6))
+
 # [1.3.0](https://github.com/wmfs/tymly-data-types/compare/v1.2.0...v1.3.0) (2019-02-13)
 
 
