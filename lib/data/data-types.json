@@ -488,6 +488,20 @@
   },
   {
     "seq": 10,
+    "name": "postcode",
+    "jsonSchema": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "category": "text",
+    "title": "Post Code",
+    "domains": [
+      "location"
+    ],
+    "description": ""
+  },
+  {
+    "seq": 10,
     "name": "notes",
     "jsonSchema": {
       "type": "string"
