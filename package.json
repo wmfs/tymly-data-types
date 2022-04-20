@@ -11,7 +11,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "ejs": "3.1.6",
+    "ejs": "3.1.7",
     "chai": "4.3.6",
     "codecov": "3.8.3",
     "conventional-changelog-metahub": "4.0.1",
