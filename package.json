@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "ejs": "4.0.1",
-    "chai": "4.5.0",
+    "chai": "6.2.2",
     "codecov": "3.8.3",
     "conventional-changelog-conventionalcommits": "9.1.0",
     "cz-conventional-changelog": "3.3.0",
